@@ -14,7 +14,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 }
 
 /* Início da seção HEADER */
@@ -82,6 +82,7 @@ header {
     border-bottom: 5px solid var(--cor-verde);
     color: var(--cor-cinza)
 }
+
 /* Fim da seção HEADER */
 
 
@@ -131,11 +132,12 @@ header {
     text-transform: uppercase;
 }
 
-.banner h2{
+.banner h2 {
     text-transform: uppercase;
     margin-top: 20px;
 }
-.banner a{
+
+.banner a {
     /* Botão de sobre mim */
     display: block;
     background-color: var(--cor-verde);
@@ -150,6 +152,39 @@ header {
 }
 
 /* Início da section sobre mim / padrão  */
-.default{
-    background-color: red;
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+    background-color: var(--cor-branca)
+}
+
+.default.light {
+    background-color: var(--cor-branca);
+}
+
+.default.light .section-title {
+    color: var(--cor-preta);
+}
+
+.default.dark {
+    background-color: var(--cor-preta);
+}
+
+.default.dark .section-title {
+    color: var(--cor-branca);
+
 }
