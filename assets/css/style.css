@@ -1,8 +1,9 @@
 
 :root{
-    --cor-primaria: #000;
-    --cor-secundaria: #76ABAE;
-    --cor-terciaria: #FFF;
+    --cor-preta: #000;
+    --cor-verde: #76ABAE;
+    --cor-branca: #FFF;
+    --cor-cinza: #CCC;
 }
 * {
     margin: 0;
@@ -16,14 +17,14 @@ body{
 
 header {
     height: 6.25rem;
-    background-color: black;
-    color: var(--cor-terciaria);
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
 }
 
 .header {
     /* Classe do header */
     max-width: 1140px;
-    height: 6.25rem;
+    height: 100px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@ header {
     /* Icone da logo */
     width: 5rem;
     height: 5rem;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-verde);
 }
 
 .menu{
@@ -55,7 +56,7 @@ header {
 }
 .menu li a {
     /* Itens do menu */
-    color:var(--cor-terciaria);
+    color:var(--cor-branca);
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -64,10 +65,19 @@ header {
     height: 6.25rem;
     display: flex;
     align-items: center;
-    border-bottom: 5px solid var(--cor-primaria);
+    border-bottom: 5px solid var(--cor-preta);
 }
 .menu li a:hover,
 .menu .active a{
     /* Barra dos itens do menu */
-    border-bottom:5px solid var(--cor-secundaria)
+    border-bottom:5px solid var(--cor-verde);
+    color:var(--cor-cinza)
+}
+.banner {
+    /* Background do inicio */
+    height: calc(100vh - 100px);
+    background-color: #CCC;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
