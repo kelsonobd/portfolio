@@ -1,20 +1,23 @@
-
-:root{
+:root {
     --cor-preta: #000;
     --cor-verde: #76ABAE;
     --cor-branca: #FFF;
     --cor-cinza: #CCC;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
+    overflow-x:hidden ;
 }
 
+/* Início da seção HEADER */
 header {
     height: 6.25rem;
     background-color: var(--cor-preta);
@@ -30,33 +33,38 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo {
     /* Área da logo */
     width: 6.25rem;
 }
-.logoImg{
+
+.logoImg {
     /* Icone da logo */
     width: 5rem;
     height: 5rem;
+    border-radius: 40px;
     background-color: var(--cor-verde);
 }
 
-.menu{
+.menu {
     /* Área do menu */
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
 }
+
 .menu ul,
-.menu li{
+.menu li {
     list-style: none;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
 }
+
 .menu li a {
     /* Itens do menu */
-    color:var(--cor-branca);
+    color: var(--cor-branca);
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -67,12 +75,18 @@ header {
     align-items: center;
     border-bottom: 5px solid var(--cor-preta);
 }
+
 .menu li a:hover,
-.menu .active a{
+.menu .active a {
     /* Barra dos itens do menu */
-    border-bottom:5px solid var(--cor-verde);
-    color:var(--cor-cinza)
+    border-bottom: 5px solid var(--cor-verde);
+    color: var(--cor-cinza)
 }
+/* Fim da seção HEADER */
+
+
+
+/* Inicio da seção MAIN */
 .banner {
     /* Background do inicio */
     height: calc(100vh - 100px);
@@ -80,4 +94,62 @@ header {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    /* Opacidade da div encima da imagem */
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-branca)
+}
+
+.banner h1 {
+    /* Texto principal do inicio */
+    font-weight: bold;
+    font-size: 3.1rem;
+}
+
+.banner h1 span {
+    /* Segunda frase da tela de inicio */
+    color: var(--cor-verde);
+    text-transform: uppercase;
+}
+
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.banner a{
+    /* Botão de sobre mim */
+    display: block;
+    background-color: var(--cor-verde);
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* Início da section sobre mim / padrão  */
+.default{
+    background-color: red;
 }
