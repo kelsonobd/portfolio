@@ -117,7 +117,7 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: var(--cor-branca)
+    color: var(--cor-branca);
 }
 
 .banner h1 {
@@ -137,19 +137,31 @@ header {
     margin-top: 20px;
 }
 
+.media-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 90px;
+}
+/* Icones redes sociais home */
+.media-social-img{
+    width: 50px;
+}
+/*  
 .banner a {
-    /* Botão de sobre mim */
+    
     display: block;
     background-color: var(--cor-verde);
     color: var(--cor-branca);
     text-transform: uppercase;
-    font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
     padding: 10px 30px;
     margin-top: 30px;
     border-radius: 20px;
-}
+}*/
+/* Botão de sobre mim */
 
 /* Início da section sobre mim / padrão  */
 .default {
@@ -333,16 +345,68 @@ header {
     text-align: center;
 }
 
+
+
+
+
 /* Seção Habilidades pessoais */
-.bg-hardskills {
-    background-image: url(../images/softskills.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 0;
+
+.section-softskills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cor-preta); 
 }
 
-.section-hardskills-area {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-top: 50px;
-    padding-bottom: 50px;
+.section-softskill{
+    /* Quadrado com informações */
+    width: 18.75rem;
+    height: 18.75rem;
+    background-color: var(--cor-verde);
+    border-radius: 10px;
+    padding: 5px;
+    text-align:center;
+}
+ .softskill-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.softskill-text{
+    font-size: 13px;
+
+}
+
+
+/* Rodapé */
+footer {
+    background-color:#000000;
+    height: 60px;
+    display: flex;
+    padding: 20px;
+}
+.footer--area {
+    max-width:1140px;
+    margin:auto;
+    color:#FFF;
+    text-align: center;
+}
+
+.footer-social a{
+    text-decoration: none;
+   margin-left: 10px;
+    
+}
+
+.footer--social-img{
+    width: 40px;   
+}
+
+.footer-info{
+    font-size: 12px;
+    margin-top: 30px;  
+}
+
+.footer-social-img{
+    width: 50px;   
 }
