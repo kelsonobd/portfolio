@@ -208,6 +208,9 @@ header {
 /* Área branca- sobre mim */
 .section-about {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .section-about--left {
@@ -226,11 +229,10 @@ header {
 }
 
 .section-about--right img {
-    background-color: aqua;
     border-radius: 50%;
-    height: 300px;
-    width: 320px;
-    box-shadow: 0px 5px 10px var(--cor-preta);
+    height: 19.75rem;
+    width: 20rem;
+    box-shadow: 20px 10px 50px 20px var(--cor-verde);
 }
 
 /* Área preta habilidades */
@@ -258,4 +260,63 @@ header {
     margin-top: 30px;
     text-transform: uppercase;
     font-size: 18px;
+}
+
+/* Section Projetos */
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Área fotos */
+.section-projects--photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* propriedades fotos inviduais */
+.section-projects--photo {
+    width: 280px;
+}
+
+/* Área por trás das fotos */
+.section-projects--photoarea {
+    margin: 10px;
+    width: 16.25rem;
+    height: 10rem;
+}
+
+/* Fotos */
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+/* Informações das fotos */
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    color: var(--cor-branca)
+}
+
+.section-projects--photoinfo h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;   
+    text-align: center;
 }
