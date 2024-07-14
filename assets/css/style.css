@@ -588,11 +588,15 @@ footer {
         height: 11.8rem;
     }
     /* rodape */
+    .footer--area{
+        padding: 0px;
+    }
     .footer--area .footer-social .footer--social-img{
         width: 20px ;
     }
     .footer--area .footer-info{
-        font-size: 10px;
+        font-size: 8px;
+        margin-top:20px;
     }
 
 }
