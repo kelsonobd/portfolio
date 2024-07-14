@@ -157,13 +157,23 @@ header {
     padding-bottom: 50px;
 }
 
-.default .section-title {
+.default .section-title,
+.default .section-subtittle {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 3.0rem;
+}
 
+.default .section-title {
+    font-size: 1.25rem;
+
+}
+
+.default .section-subtittle {
+    font-size: 20px;
+    color: var(--cor-verde);
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .default .section-body {
@@ -236,13 +246,13 @@ header {
 }
 
 /* Área preta habilidades */
-.section-habilities {
+.section-hardskills {
     display: flex;
     background-color: var(--cor-preta);
 
 }
 
-.section-habilitie {
+.section-hardskill {
     flex: 1;
     text-align: center;
     border-right: 1px solid var(--cor-verde);
@@ -252,11 +262,11 @@ header {
     align-items: center;*/
 }
 
-.section-habilitie:first-child {
+.section-hardskill:first-child {
     border-left: 1px solid var(--cor-verde);
 }
 
-.section-habilitie h4 {
+.section-hardskill h4 {
     margin-top: 30px;
     text-transform: uppercase;
     font-size: 18px;
@@ -269,6 +279,8 @@ header {
     align-items: center;
 
 }
+
+
 
 /* Área fotos */
 .section-projects--photos {
@@ -307,7 +319,7 @@ header {
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     color: var(--cor-branca)
 }
 
@@ -316,7 +328,21 @@ header {
     font-weight: 600;
 }
 
-.section-projects--photoarea:hover .section-projects--photoinfo{
-    display: flex;   
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
     text-align: center;
+}
+
+/* Seção Habilidades pessoais */
+.bg-hardskills {
+    background-image: url(../images/softskills.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-hardskills-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
