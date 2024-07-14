@@ -587,6 +587,12 @@ footer {
         width: 18.75rem;
         height: 11.8rem;
     }
-
+    /* rodape */
+    .footer--area .footer-social .footer--social-img{
+        width: 20px ;
+    }
+    .footer--area .footer-info{
+        font-size: 10px;
+    }
 
 }
