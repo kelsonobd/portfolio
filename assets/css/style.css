@@ -518,9 +518,16 @@ footer {
 
 
     /* h1 e span */
-    .banner .slidearea h1 {
+    .banner .slidearea h1 .span--h1{
         font-size: 23px;
+    }
+    .banner .slidearea h1 {
+        font-size: 30px;
         text-align: center;
+        line-height: 40px;
+    }
+    .banner .slidearea h1 span{
+        font-size: 23px;
     }
 
     .banner .slidearea h2 {
