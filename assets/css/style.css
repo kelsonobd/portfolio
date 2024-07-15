@@ -382,6 +382,7 @@ footer {
 .section-projects--photoarea img {
     width: inherit;
     height: inherit;
+    
 }
 
 /* Informações das fotos */
@@ -394,10 +395,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--cor-branca)
+    color: var(--cor-branca);
+    
 }
 
 .section-projects--photoinfo h5 {
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
 }
@@ -407,8 +410,17 @@ footer {
     text-align: center;
 }
 
+.section-projects--photoinfo p {
+    font-size: 13px;
+}
 
-
+.section-projects--photoinfo .links{
+    position: flex;
+    align-items: center;
+}
+.section-projects--photoinfo .link{
+    width: 1.75rem;  
+}
 
 
 /* Área responsividade TABLET */
