@@ -175,10 +175,13 @@ header {
 }
 
 .default .section-subtittle {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--cor-verde);
     margin-top: 10px;
     margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .default .section-body {
@@ -268,8 +271,8 @@ footer {
 }
 
 .section-about--left p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .section-about--right {
@@ -279,10 +282,10 @@ footer {
 }
 
 .section-about--right img {
+    filter:drop-shadow(5px 5px 30px var(--cor-preta));
     border-radius: 50%;
-    height: 19.75rem;
-    width: 20rem;
-    box-shadow: 20px 10px 50px 20px var(--cor-verde);
+    height:21.8rem ;
+    width: 21.8rem;
 }
 
 /* Área preta hardskills */
@@ -324,21 +327,24 @@ footer {
 
 .section-softskill {
     /* Quadrado com informações */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 18.75rem;
     height: 18.75rem;
     background-color: var(--cor-verde);
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
+    border-radius: 10px;;
+    padding: 15px;
+  
 }
 
 .softskill-title {
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .softskill-text {
-    font-size: 13px;
+    font-size: 17px;
 }
 
 
