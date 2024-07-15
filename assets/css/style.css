@@ -1,8 +1,9 @@
 :root {
     --cor-preta: #000;
     --cor-verde: #76ABAE;
-    --cor-branca: #FFF;
-    --cor-cinza: #CCC;
+    --cor-branca: #fff;
+    --cor-cinza: #F5F7F8;
+    --cor-cinza2:#EEE;
 }
 
 * {
@@ -119,17 +120,25 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: var(--cor-branca);
+}
+
+.banner h1 .span--h1{
+    color:var(--cor-branca);
+    font-size: 25px;
 }
 
 .banner h1 {
     /* Texto principal do inicio */
-    font-weight: bold;
-    font-size: 3.1rem;
+    font-weight: 400;
+    font-size:50px;
+    line-height:50px;
 }
 
 .banner h1 span {
     color: var(--cor-verde);
+    font-size: 35px;
 }
 
 .banner h2 {
@@ -175,12 +184,12 @@ header {
 .default .section-body {
     max-width: 1140px;
     margin: auto;
-    background-color: var(--cor-branca)
+    background-color: var(--cor-cinza2)
 }
 
 /* Estilização section branca */
 .default.light {
-    background-color: var(--cor-branca);
+    background-color: var(--cor-cinza2);
 }
 
 .default.light .section-title,
@@ -511,6 +520,7 @@ footer {
     /* h1 e span */
     .banner .slidearea h1 {
         font-size: 23px;
+        text-align: center;
     }
 
     .banner .slidearea h2 {
