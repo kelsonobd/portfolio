@@ -3,7 +3,7 @@
     --cor-verde: #76ABAE;
     --cor-branca: #fff;
     --cor-cinza: #F5F7F8;
-    --cor-cinza2:#EEE;
+    --cor-cinza2: #EEE;
 }
 
 * {
@@ -124,16 +124,16 @@ header {
     color: var(--cor-branca);
 }
 
-.banner h1 .span--h1{
-    color:var(--cor-branca);
+.banner h1 .span--h1 {
+    color: var(--cor-branca);
     font-size: 25px;
 }
 
 .banner h1 {
     /* Texto principal do inicio */
     font-weight: 400;
-    font-size:50px;
-    line-height:50px;
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .banner h1 span {
@@ -282,9 +282,9 @@ footer {
 }
 
 .section-about--right img {
-    filter:drop-shadow(5px 5px 30px var(--cor-preta));
+    filter: drop-shadow(5px 5px 30px var(--cor-preta));
     border-radius: 50%;
-    height:21.8rem ;
+    height: 21.8rem;
     width: 21.8rem;
 }
 
@@ -333,9 +333,10 @@ footer {
     width: 18.75rem;
     height: 18.75rem;
     background-color: var(--cor-verde);
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     padding: 15px;
-  
+
 }
 
 .softskill-title {
@@ -382,7 +383,7 @@ footer {
 .section-projects--photoarea img {
     width: inherit;
     height: inherit;
-    
+
 }
 
 /* Informações das fotos */
@@ -396,7 +397,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--cor-branca);
-    
+
 }
 
 .section-projects--photoinfo h5 {
@@ -414,12 +415,13 @@ footer {
     font-size: 13px;
 }
 
-.section-projects--photoinfo .links{
+.section-projects--photoinfo .links {
     position: flex;
     align-items: center;
 }
-.section-projects--photoinfo .link{
-    width: 1.75rem;  
+
+.section-projects--photoinfo .link {
+    width: 1.75rem;
 }
 
 
@@ -536,15 +538,17 @@ footer {
 
 
     /* h1 e span */
-    .banner .slidearea h1 .span--h1{
+    .banner .slidearea h1 .span--h1 {
         font-size: 23px;
     }
+
     .banner .slidearea h1 {
         font-size: 30px;
         text-align: center;
         line-height: 40px;
     }
-    .banner .slidearea h1 span{
+
+    .banner .slidearea h1 span {
         font-size: 23px;
     }
 
@@ -615,23 +619,26 @@ footer {
 
     .section-projects--photo {
         width: 20rem;
-       
+
     }
 
     .section-projects--photoarea {
         width: 18.75rem;
         height: 11.8rem;
     }
+
     /* rodape */
-    .footer--area{
+    .footer--area {
         padding: 0px;
     }
-    .footer--area .footer-social .footer--social-img{
-        width: 20px ;
+
+    .footer--area .footer-social .footer--social-img {
+        width: 20px;
     }
-    .footer--area .footer-info{
+
+    .footer--area .footer-info {
         font-size: 8px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
 }
