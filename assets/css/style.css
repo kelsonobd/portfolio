@@ -364,7 +364,7 @@ footer {
     }
     
     
-    .section-projects .projects .project-item img {
+    .section-projects .projects .project-item .img--project {
     width: 400px;
     height: 280px; /* Corrigido para incluir 'px' */
     border-radius: 10px;
