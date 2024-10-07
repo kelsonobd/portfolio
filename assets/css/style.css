@@ -38,10 +38,6 @@ header {
   display: none;
 }
 
-.menu nav {
-  display: none; /* Oculta o menu por padrão */
-}
-
 .menu nav.active {
   display: block; /* Exibe o menu quando a classe 'active' está presente */
 }
@@ -76,8 +72,7 @@ header {
   border-bottom: 5px solid var(--cor-preta);
 }
 
-.menu li a:hover,
-.menu .active a {
+.menu li a:hover {
   /* Barra dos itens do menu */
   color: var(--cor-verde);
 }
@@ -86,8 +81,9 @@ header {
 
 /* Inicio da seção MAIN */
 .banner {
+  height: 100dvh;
   /* Background do inicio */
-  height: calc(100vh - 100px);
+ /*  height: calc(100vh - 100px); */
   background-color: #ccc;
   background-image: url(../images/bg.jpg);
   background-size: cover;
@@ -168,7 +164,7 @@ header {
 .default .section-subtittle {
   font-size: 16px;
   color: var(--cor-verde);
-  margin-top: 10px;
+  
   margin-bottom: 40px;
   font-weight: 600;
   text-transform: uppercase;
@@ -342,7 +338,7 @@ footer {
 }
 
 .section-projects .projects .project-item .img--project {
-  width:  500px;
+  width: 500px;
   height: 280px; /* Corrigido para incluir 'px' */
   border-radius: 10px;
   flex-grow: 1;
@@ -583,11 +579,7 @@ footer {
     font-size: 20px;
     margin-left: 15px;
     border: 0;
-  }
-
-  .menu li.active a {
-    border: 0;
-    color: var(--cor-verde);
+    color: white;
   }
 
   .banner .slide {
@@ -623,6 +615,9 @@ footer {
     margin-bottom: 50px;
   }
 
+  .section-subtittle {
+    margin-top: -40px;
+  }
   .section-about {
     flex-direction: column-reverse;
   }
