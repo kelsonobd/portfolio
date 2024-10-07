@@ -170,7 +170,7 @@ header {
 }
 
 .default .section-title {
-    font-size: 1.25rem;
+    font-size: 30px;
 }
 
 .default .section-subtittle {
@@ -371,7 +371,13 @@ footer {
     flex-grow: 1;
     transition: transform 0.3s;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
     }
+    .img--project:hover {
+        transform: scale(1.1); /* Aumenta a imagem em 10% */
+    }
+    
     
     
     .project-overlay {
@@ -529,13 +535,10 @@ footer {
     }
     
     
-    .section-projects .projects .project-item img {
+    .section-projects .projects .project-item .img--project {
     width: 380px;
     height: 280px; /* Corrigido para incluir 'px' */
-    border-radius: 10px;
-    flex-grow: 1;
-    transition: transform 0.3s;
-    cursor: pointer;
+    
     }
 
     /* Estilização do overlay e descrição */
@@ -728,7 +731,11 @@ footer {
         padding-right: 20px;
         
     }
-    .se
+    .section-projects .projects .project-item .img--project{
+        width: 350px;
+        height: 200px;
+    }
+    
 
     /* Estilização do overlay e descrição */
     .project-overlay {
