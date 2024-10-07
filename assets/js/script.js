@@ -1,11 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuOpener = document.querySelector(".menu-opener");
     const menu = document.querySelector(".menu nav");
+    const menuItems = document.querySelectorAll(".menu nav a"); // Seleciona todos os links do menu
 
     // Adiciona o evento de clique no botão de menu
     menuOpener.addEventListener("click", function () {
         // Alterna a classe 'active' para mostrar ou ocultar o menu
         menu.classList.toggle("active");
+    }); 
+
+    // Adiciona o evento de clique em cada item do menu
+    menuItems.forEach((item) => {
+        item.addEventListener("click", function () {
+            // Remove a classe 'active' para fechar o menu
+            menu.classList.remove("active");
+        });
     });
 
     // O restante do seu código
