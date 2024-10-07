@@ -70,6 +70,10 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 5px solid var(--cor-preta);
+  transform: translateX(100%); /* Inicialmente fora da tela */
+  opacity: 0; /* Começa invisível */
+  animation: slideIn 1s forwards; /* Chama a animação */
+  animation-delay: 0.4s; /* Espera meio segundo antes de começar a animação */
 }
 
 .menu li a:hover {
@@ -83,7 +87,7 @@ header {
 .banner {
   height: 100dvh;
   /* Background do inicio */
- /*  height: calc(100vh - 100px); */
+  /*  height: calc(100vh - 100px); */
   background-color: #ccc;
   background-image: url(../images/bg.jpg);
   background-size: cover;
@@ -159,12 +163,16 @@ header {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 30px;
+  opacity: 0; /* Começa invisível */
+  transform: translateY(-20px); /* Move um pouco para cima */
+  animation: fadeInUp 0.5s forwards; /* Chama a animação */
+  animation-delay: 0.2s; /* Espera um pouco antes de começar a animação */
 }
 
 .default .section-subtittle {
   font-size: 16px;
   color: var(--cor-verde);
-  
+
   margin-bottom: 40px;
   font-weight: 600;
   text-transform: uppercase;
@@ -740,5 +748,28 @@ footer {
   .footer--area .footer-info {
     font-size: 8px;
     margin-top: 20px;
+  }
+}
+
+
+
+/* EFEITOS KEYFRAMES */
+
+/* Vindo da direita */
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Retorna à posição original */
   }
 }
