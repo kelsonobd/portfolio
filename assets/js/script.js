@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const menuOpener = document.querySelector(".menu-opener");
+    const menu = document.querySelector(".menu nav");
+
+    // Adiciona o evento de clique no botão de menu
+    menuOpener.addEventListener("click", function () {
+        // Alterna a classe 'active' para mostrar ou ocultar o menu
+        menu.classList.toggle("active");
+    });
+
+    // O restante do seu código
     const projectItems = document.querySelectorAll(".project-item img");
     const overlay = document.querySelector(".project-overlay");
     const overlayImage = document.getElementById("enlarged-image");
@@ -10,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
             const projectDescription = this.parentElement.querySelector(
                 ".project-description"
             );
-            const linkUrl = this.dataset.link; // Obtém o link do data-link
+            const linkUrl = this.dataset.link;
 
             overlay.style.display = "flex";
             overlayImage.src = item.src;
 
-            // Exibe a descrição que está dentro da tag <p>
             descriptionDiv.innerHTML = projectDescription.innerHTML;
 
-            // Atualiza o link dentro da descrição
             const linkElement = descriptionDiv.querySelector("a");
-            linkElement.href = linkUrl; // Define o href do link de acordo com o data-link
+            linkElement.href = linkUrl;
         });
     });
 
@@ -34,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Inicializa o efeito Typed.js
     var typed = new Typed(".text", {
         strings: ["Desenvolvedor Front-end"],
         typeSpeed: 100,
