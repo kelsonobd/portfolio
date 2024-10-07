@@ -82,8 +82,7 @@ header {
 .menu li a:hover,
 .menu .active a {
     /* Barra dos itens do menu */
-    border-bottom: 5px solid var(--cor-verde);
-    color: var(--cor-cinza)
+    color: var(--cor-verde);
 }
 
 /* Fim da seção HEADER */
@@ -252,10 +251,6 @@ footer {
 
 
 
-
-
-
-
 /* Áreas específicas */
 
 /* Área branca- sobre mim */
@@ -332,9 +327,9 @@ footer {
     align-items: center;
     width: 18.75rem;
     height: 18.75rem;
+    flex-grow: 1;
     background-color: var(--cor-verde);
     border-radius: 10px;
-    ;
     padding: 15px;
 
 }
@@ -354,75 +349,85 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-
-/* Área fotos */
-.section-projects--photos {
-    width: 100vw;
-    max-width: 1140px;
-    margin-top: 10px;
+    background-color: var(--cor-azul);
+    margin-top: 30px;
+    }
+    
+    
+    .section-projects .projects {
+    background-color: var(--cor-azul);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+    gap: 30px;
+    padding: 10px;
+    }
+    
+    
+    .section-projects .projects .project-item img {
+    width: 400px;
+    height: 280px; /* Corrigido para incluir 'px' */
+    border-radius: 10px;
+    flex-grow: 1;
+    transition: transform 0.3s;
+    cursor: pointer;
+    }
+    
+    
+    .project-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none; /* Oculto inicialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .project-overlay img {
+        max-width: 50%; /* Limita o tamanho da imagem */
+        max-height: 80%; /* Limita a altura da imagem */
+        border-radius: 10px;
+    }
+    
+    .project-overlay .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    .project-overlay .description {
+        background-color: transparent;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        max-width: 400px;
+        height: auto;
+        text-align: justify;
+        font-size: 16px;
+        overflow-y: auto;
+    }
+    .projects .project-item .project-description{
+        display: none;
+    }
 
-/* propriedades fotos inviduais */
-.section-projects--photo {
-    width: 280px;
-}
 
-/* Área por trás das fotos */
-.section-projects--photoarea {
-    margin: 10px;
-    width: 16.25rem;
-    height: 10rem;
-}
 
-/* Fotos */
-.section-projects--photoarea img {
-    width: inherit;
-    height: inherit;
 
-}
 
-/* Informações das fotos */
-.section-projects--photoinfo {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: inherit;
-    height: inherit;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-branca);
 
-}
-
-.section-projects--photoinfo h5 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.section-projects--photoarea:hover .section-projects--photoinfo {
-    display: flex;
-    text-align: center;
-}
-
-.section-projects--photoinfo p {
-    font-size: 13px;
-}
-
-.section-projects--photoinfo .links {
-    position: flex;
-    align-items: center;
-}
-
-.section-projects--photoinfo .link {
-    width: 1.75rem;
-}
 
 
 /* Área responsividade TABLET */
@@ -487,6 +492,7 @@ footer {
         width: auto;
     }
 
+
     /* Seção soft-skils */
 
     .section-softskills {
@@ -500,11 +506,98 @@ footer {
         
     }
     .softskill-text{
-        text-align: ;
         font-size: 17px;
     }
-}
 
+/* Área dos projetos */
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-azul);
+    margin-top: 30px;
+    }
+    
+    
+    .section-projects .projects {
+    background-color: var(--cor-azul);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    }
+    
+    
+    .section-projects .projects .project-item img {
+    width: 380px;
+    height: 280px; /* Corrigido para incluir 'px' */
+    border-radius: 10px;
+    flex-grow: 1;
+    transition: transform 0.3s;
+    cursor: pointer;
+    }
+
+    /* Estilização do overlay e descrição */
+    .project-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        display: none; /* Oculto inicialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Deve estar acima de outros elementos */
+        }
+
+        .project-overlay img {
+        max-width: 80%; /* Limita o tamanho da imagem */
+        max-height: 50%; /* Limita a altura da imagem */
+        border-radius: 10px; /* Adiciona borda arredondada */
+        }
+        
+        
+        .project-overlay .close-icon {
+        position: absolute; /* Para que fique em posição absoluta dentro do overlay */
+        top: 20px; /* Distância do topo */
+        right: 20px; /* Distância da direita */
+        width: 50px; /* Largura do ícone de fechar */
+        height: 50px; /* Altura do ícone de fechar */
+        cursor: pointer; /* Mostra que é clicável */
+        z-index: 1001; /* Garante que fique acima de outros elementos */
+        }
+        
+        
+        .project-overlay .description {
+      
+        background-color: transparent; /* Fundo branco */
+        color: white;
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 10px; /* Borda arredondada */
+        margin-left:-18px ; /* Espaço entre a imagem e a descrição */
+        max-width: 320px; /* Largura máxima da descrição */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        text-align: justify; /* Justifica o texto */
+        font-size: 15px;
+        overflow-y: auto; /* Permite rolagem se o texto for muito longo */
+        /* Para ajustar a altura, você pode adicionar uma altura mínima */
+        min-width: 100px;
+        min-height: 150px; /* Altere este valor conforme necessário */
+        }
+
+
+
+
+
+
+}
 
 /* Área responsiva celulares */
 @media (max-width:450px) {
@@ -542,6 +635,15 @@ footer {
         color: var(--cor-verde)
     }
 
+    .banner .slide {
+        /* Opacidade da div encima da imagem */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        
+    }
 
     /* h1 e span */
     .banner .slidearea h1 .span--h1 {
@@ -608,30 +710,83 @@ footer {
     }
 
     .section-softskill {
-        max-width: 100%;
+        max-width: 80%;
         margin-bottom: 10px;
-        padding: 20px
+        padding: 20px;
+        
     }
 
     .section-softskill .softskill-text {
         font-size: 15px;
     }
 
+
+
     /* Área dos projetos */
-
-    .section-projects--photos {
-        margin-top: -30px;
+    .section-project .projects {
+        padding-left: 20px;
+        padding-right: 20px;
+        
     }
+    .se
 
-    .section-projects--photo {
-        width: 20rem;
+    /* Estilização do overlay e descrição */
+    .project-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        display: none; /* Oculto inicialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo preto */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Deve estar acima de outros elementos */
+        }
 
-    }
+        .project-overlay img {
+        max-width: 80%; /* Limita o tamanho da imagem */
+        max-height: 50%; /* Limita a altura da imagem */
+        border-radius: 10px; /* Adiciona borda arredondada */
+        }
+        
+        
+        .project-overlay .close-icon {
+        position: absolute; /* Para que fique em posição absoluta dentro do overlay */
+        top: 20px; /* Distância do topo */
+        right: 20px; /* Distância da direita */
+        width: 50px; /* Largura do ícone de fechar */
+        height: 50px; /* Altura do ícone de fechar */
+        cursor: pointer; /* Mostra que é clicável */
+        z-index: 1001; /* Garante que fique acima de outros elementos */
+        }
+        
+        
+        .project-overlay .description {
+      
+        background-color: transparent; /* Fundo branco */
+        color: white;
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 10px; /* Borda arredondada */
+        margin-left:-18px ; /* Espaço entre a imagem e a descrição */
+        max-width: 320px; /* Largura máxima da descrição */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        text-align: justify; /* Justifica o texto */
+        font-size: 17px;
+        overflow-y: auto; /* Permite rolagem se o texto for muito longo */
+        /* Para ajustar a altura, você pode adicionar uma altura mínima */
+        min-width: 100px;
+        min-height: 150px; /* Altere este valor conforme necessário */
+        }
 
-    .section-projects--photoarea {
-        width: 18.75rem;
-        height: 11.8rem;
-    }
+
+
+
 
     /* rodape */
     .footer--area {
