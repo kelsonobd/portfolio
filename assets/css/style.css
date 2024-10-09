@@ -237,9 +237,9 @@ footer {
   margin-top: 30px;
 }
 
-.footer--social-img {
-  width: 30px;
-  height: 30px;
+.footer--area .footer-social a .footer--social-img {
+  width: 25px;
+  height: 25px;
 }
 
 /* Áreas específicas */
