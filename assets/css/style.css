@@ -372,7 +372,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto */
   justify-content: center;
   align-items: center;
   z-index: 1000;
