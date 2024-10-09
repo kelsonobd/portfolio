@@ -216,6 +216,7 @@ footer {
   height: auto;
   display: flex;
   padding: 20px;
+  color: #fff;
 }
 
 .footer--area {
@@ -236,8 +237,9 @@ footer {
   margin-top: 30px;
 }
 
-.footer-social-img {
-  width: 50px;
+.footer--social-img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Áreas específicas */
@@ -744,6 +746,7 @@ footer {
 
   .footer--area .footer-social .footer--social-img {
     width: 20px;
+    height: 20px;
   }
 
   .footer--area .footer-info {
