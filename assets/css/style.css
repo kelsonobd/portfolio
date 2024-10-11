@@ -285,6 +285,7 @@ footer {
 .section-about--left p {
   font-size: 20px;
   line-height: 26px;
+  text-align: justify;
 }
 
 .section-about--right {
@@ -293,10 +294,16 @@ footer {
 }
 
 .section-about--right img {
-  filter: drop-shadow(5px 5px 30px var(--cor-preta));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 
+              0 2px 6px rgba(0, 0, 0, 0.1);
+ 
   border-radius: 50%;
   height: 21.8rem;
   width: 21.8rem;
+}
+
+img:hover {
+ 
 }
 
 /* Área preta hardskills */
@@ -353,6 +360,7 @@ footer {
 }
 
 .softskill-text {
+  text-align: justify;
   font-size: 17px;
 }
 
