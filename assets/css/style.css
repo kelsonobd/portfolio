@@ -504,6 +504,7 @@ img:hover {
   .section-about--right {
     width: auto;
   }
+ 
 
   /* Seção soft-skils */
 
@@ -680,7 +681,10 @@ img:hover {
   }
 
   .section-about--right img {
-    width: 100%;
+   
+      height: 250px;
+      width:250px;
+    }
   }
 
   /* Seção harskills(tecnologia)*/
