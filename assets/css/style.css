@@ -302,9 +302,6 @@ footer {
   width: 21.8rem;
 }
 
-img:hover {
- 
-}
 
 /* Área preta hardskills */
 .section-hardskills {
@@ -356,7 +353,7 @@ img:hover {
 .section-softskills .section-softskill .softskill-subTitle {
   font-size: 15px;
  text-transform: uppercase;
- white-space: nowrap;
+ text-align: center;
 }
 
 
